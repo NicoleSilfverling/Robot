@@ -5,91 +5,52 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity" android:padding="60px">
-    <TextView
-            android:layout_width="97dp"
-            android:layout_height="38dp"
-            android:text="Hello!!!!!!123"
+        android:background="@color/black"
+        tools:context=".MainActivity" android:padding="1dp">
+    <Button
+            android:text="Click me"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" android:id="@+id/button1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.187"
-            app:layout_constraintVertical_bias="0.691"/>
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.103"
+            app:layout_constraintVertical_bias="0.319"
+            app:strokeColor="@color/white"
+            app:strokeWidth="6dp"/>
+
+
+    <TextView
+            android:id="@+id/tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearance"
+            android:background="@color/white"
+            android:textSize="100sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
     <Button
             android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button" tools:layout_editor_absoluteY="457dp"
-            tools:layout_editor_absoluteX="136dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" android:id="@+id/button2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.1"
-            app:layout_constraintVertical_bias="0.691"/>
-    <EditText
-            android:id="@+id/cost_of_service"
-            android:hint="Cost of Service"
-            android:layout_height="wrap_content"
-            android:layout_width="160dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:inputType="numberDecimal"/>
-
-    <TextView
-            android:id="@+id/service_question"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="How was the service?"
-            app:layout_constraintTop_toBottomOf="@id/cost_of_service"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    <RadioGroup
-            android:id="@+id/tip_options"
-            android:checkedButton="@id/option_twenty_percent"
-            android:layout_width="136dp"
-            android:layout_height="279dp"
-            app:layout_constraintTop_toBottomOf="@id/service_question"
-            app:layout_constraintStart_toStartOf="parent"
-            android:orientation="vertical">
-
-        <RadioButton
-                android:id="@+id/option_twenty_percent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Amazing (20%)"/>
-
-        <RadioButton
-                android:id="@+id/option_eighteen_percent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Good (18%)"/>
-
-        <RadioButton
-                android:id="@+id/option_fifteen_percent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="OK (15%)"/>
-
-
-    </RadioGroup>
-
-
-    <Switch
-            android:id="@+id/round_up_switch"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="Round up tip?"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/tip_options"
-            app:layout_constraintTop_toBottomOf="@id/tip_options"/>
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintVertical_bias="0.69"/>
     <Button
-            android:id="@+id/calculate_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Calculate"
-            app:layout_constraintTop_toBottomOf="@id/round_up_switch"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:text="Button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" android:id="@+id/button3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.243"
+            app:layout_constraintVertical_bias="0.69"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
